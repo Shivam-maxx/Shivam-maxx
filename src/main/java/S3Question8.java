@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 public class S3Question8 {
 
 	public static void main(String[] args) {
@@ -20,14 +22,21 @@ public class S3Question8 {
 			prod*=d;
 			num=num/10;
 			c++;
-			arr[k]=d;
-			k+=1;
+			arr[k++]=d;
+		}
+		int l=0;
+		int arr1[]=new int[6];
+		for(int i=k-1;i>=0;i--) {
+			arr1[l++]=arr[i];
 		}
 		System.out.print("Previous Number: "+num1+"\nFirst Digit: "+arr[c-1]+"\nLast Digit: "+arr[0]+"\nReverse Of Nummber: "+Rev+"\nprduct of the number:"+prod);
-		int temp=arr[0];
-		arr[0]=arr[c-1];
-		arr[c-1]=temp;
-		System.out.print("\nAter Swap:\n"+"First Digit:"+arr[c-1]+"Last Digit"+arr[0]);
+		int temp=arr1[0];
+		arr1[0]=arr1[c-1];
+		arr1[c-1]=temp;
+		System.out.print("\nAter Swap:\n"+"First Digit:"+arr1[0]+"\nLast Digit:"+arr1[k-1]+"\n");
+		for(int i=0;i<=c-1;i++) {
+			System.out.print(+arr1[i]);
+		}
 	}
 
 }

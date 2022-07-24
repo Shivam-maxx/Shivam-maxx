@@ -41,6 +41,9 @@ public class S3Question15java extends main {
 			case 9:
 				System.out.print("nine ");
 				break;
+			default:
+				System.out.println("zero ");
+				break;
 			}
 		    rev/=10;
 		}
