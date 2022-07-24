@@ -8,6 +8,11 @@ public class findlengthofString extends main{
 		String str=sc.nextLine();
 		int length=str.length();
 		System.out.println("Length of String is::"+length);
+		String Str1=" ";
+		for(int i=0;i<length;i++){
+			Str1[i]=str[i];
+			
+		}
 	}
 
 }
