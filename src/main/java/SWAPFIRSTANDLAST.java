@@ -14,11 +14,20 @@ public class SWAPFIRSTANDLAST extends main {
 			num/=10;
 			c++;
 		}
-		int temp=arr[0];
-		arr[0]=arr[k-1];
-		arr[k-1]=temp;
-		for(int i=0;i<k-1;i++) {
-			System.out.println(arr[i]);
+		int arr1[]=new int[6];
+		int k1=0;
+		for(int i=arr.length-1;i>=0;i--) {
+			arr1[k1++]=arr[i];
+		}
+		for(int i=1;i<=k;i++) {
+			System.out.print(arr1[i]);
+		}
+		System.out.println("\n");
+		int temp=arr1[1];
+		arr1[1]=arr1[k];
+		arr1[k]=temp;
+		for(int i=1;i<=k;i++) {
+			System.out.print(arr1[i]);
 		}
 	}
 
