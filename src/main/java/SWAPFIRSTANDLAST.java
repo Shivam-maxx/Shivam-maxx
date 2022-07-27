@@ -19,10 +19,6 @@ public class SWAPFIRSTANDLAST extends main {
 		for(int i=arr.length-1;i>=0;i--) {
 			arr1[k1++]=arr[i];
 		}
-		for(int i=1;i<=k;i++) {
-			System.out.print(arr1[i]);
-		}
-		System.out.println("\n");
 		int temp=arr1[1];
 		arr1[1]=arr1[k];
 		arr1[k]=temp;
