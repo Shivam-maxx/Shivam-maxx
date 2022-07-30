@@ -5,10 +5,8 @@ import java.util.Iterator;
 public class RemoveAllOccuranceOfWord extends main{
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int c=0;
 		char[] str=sc.nextLine().toCharArray();
-//    	StringBuffer sb = new StringBuffer(str);
 		char a=sc.next().charAt(0);
 		int i;
 		char b=sc.next().charAt(0);
